@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="https://fonts.googleapis.com/css?family=Archivo|Happy+Monkey|Pacifico" rel="stylesheet">
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <script src=”https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+   <script src=”scripts.js”></script>
+
+  
+  <script type="text/javascript" src="slimbox-2.05/js/jquery.js"></script>
+<script type="text/javascript" src="slimbox-2.05/js/slimbox2.js"></script>
+
+
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
+
+<!-- Mirrored from www.happinessabscissa.com/pages/brooklyn by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 28 Dec 2018 02:03:21 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
+
+  <!-- Basic page needs ================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
+
+  
+  <link rel="shortcut icon" href="http://cdn.shopify.com/s/files/1/0951/8508/t/3/assets/favicon.png?8346402663299678653" type="image/png" />
+  
+
+  <!-- Title and description ================================================== -->
+  <title>
+  people &ndash; Himadri
+  </title>
+
+
+
+  
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+  <!-- Helpers ================================================== -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  
+
+  <!-- CSS ================================================== -->
+  <link href="http://cdn.shopify.com/s/files/1/0951/8508/t/3/assets/timber.scss.css?8346402663299678653" rel="stylesheet" type="text/css" media="all" />
+  
+  
+  
+  <link href="http://fonts.googleapis.com/css?family=Raleway:500,800" rel="stylesheet" type="text/css" media="all" />
+
+
+  
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="slimbox-2.05/css/slimbox2.css" type="text/css" media="screen" />
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+{
+    overlayOpacity: 1.0,
+    resizeEasing: "easeOutElastic",
+    captionAnimationDuration: 1,
+    counterText: "Image {x} sur {y}",
+    closeKeys: [27, 70,88],
+    nextKeys: [39, 83]
+}
+
+
+
+/* Style the buttons */
+
+ .header {
+  text-align: center;
+  padding: 32px;
+}
+
+ .row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+  margin-left: 200px;
+}
+
+/* Create two equal columns that sits next to each other */
+ .column {
+  -ms-flex: 25%; /* IE 10 */
+  flex: 25%;
+  padding: 0 4px;
+}
+
+.column div {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+  box-shadow: 0 0 8px 8px white inset;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.img__img {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background-size: cover;
+  display: block;
+  border-radius: 125px;
+ -webkit-border-radius: 125px;
+ -moz-border-radius: 125px;
+
+
+}
+
+
+/* relevant styles */
+.img__wrap {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background-size: cover;
+  display: block;
+  border-radius: 125px;
+ -webkit-border-radius: 125px;
+ -moz-border-radius: 125px;
+ margin-left: 30px;
+
+}
+
+.img__description_layer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(36, 62, 206, 0.6);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 125px;
+ -webkit-border-radius: 125px;
+ -moz-border-radius: 125px;
+
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+ 
+.reveal {
+  filter:blur(5px);
+}
+.reveal:hover {
+   -webkit-animation: 0.25s linear forwards reveal;
+     -moz-animation: 0.25s linear forwards reveal;
+       -o-animation: 0.25s linear forwards reveal;
+          animation: 0.25s linear forwards reveal;
+}
+
+
+@-webkit-keyframes reveal { from { filter:blur(5px); } to { filter:blur(0px); }  }
+   @-moz-keyframes reveal { from { filter:blur(5px); } to { filter:blur(0px); }  }
+     @-o-keyframes reveal { from { filter:blur(5px); } to { filter:blur(0px); }  }
+        @keyframes reveal { from { filter:blur(5px); } to { filter:blur(0px); }  }
+
+
+.img__wrap:hover .img__description_layer {
+  visibility: visible;
+  opacity: 1;
+ 
+}
+
+.img__description {
+  transition: .2s;
+  transform: translateY(1em);
+  font-family: 'Happy Monkey'
+}
+
+.img__wrap:hover .img__description_layer {
+  transform: translateY(0);
+  border-radius: 125px;
+ -webkit-border-radius: 125px;
+ -moz-border-radius: 125px;
+ 
+ 
+ }
+ .img__wrap:hover .img__img{
+  transform: translateY(0);
+  border-radius: 125px;
+ -webkit-border-radius: 125px;
+ -moz-border-radius: 125px;
+ transform: scale(1.2, 1.2);
+ 
+
+ }
+
+
+</style>
+</head>
+<body>
+   <div class="nav-mobile">
+    <nav class="nav-bar" role="navigation">
+      <div class="wrapper">
+        
+
+
+
+
+<ul class="site-nav" id="accessibleNav">
+
+        <li >
+          <a href="about.html" class="site-nav__link">About</a>
+        </li>
+
+
+
+  
+  
+  
+
+</ul>
+<div class="scents-link">
+<ul class="site-nav" id="accessibleNav">
+  
+    
+  
+    
+       <li  class="services-all">
+          <a href="login.html" class="site-nav__link site-nav__linknodrop">Login</a>
+        </li>
+    
+    
+      
+        
+    
+      
+        <li  class="scents-all">
+          <a href="members.html" class="site-nav__link site-nav__linknodrop">People</a>
+        </li>
+
+        
+        <li  class="services-all">
+          <a href="fourm.html" class="site-nav__link site-nav__linknodrop">Notices</a>
+        </li>
+        
+      
+    
+     
+  
+  
+  <li >
+          <a href="form.html" class="site-nav__link">Today's Menu</a>
+        </li>
+
+  <li >
+          <a href="gallery.html" class="site-nav__link">Gallery</a>
+        </li>
+  
+  
+</ul>
+</div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="page-wrapper">
+
+    <header class="site-header" role="banner">
+      <div class="nav-bar grid--full large--hide">
+
+        <div class="grid-item grid-float one-quarter">
+          <button type="button" class="text-link nav-toggle" id="navToggle">
+            <div class="table-contain">
+              <div class="table-contain__inner">
+                <span class="icon-fallback-text">
+                  <span class="icon icon-list" aria-hidden="true"></span>
+                  <span class="fallback-text">Menu</span>
+                </span>
+              </div>
+            </div>
+          </button>
+        </div>
+
+        <div class="grid-item grid-float two-quarters">
+
+          <div class="table-contain">
+            <div class="table-contain__inner">
+
+            
+              <h1 class="header-logo" itemscope itemtype="http://schema.org/Organization">
+            
+
+            
+              <a href="index.html#himadri" itemprop="url">
+                <img src="img/logo.png" alt="Himadri" itemprop="logo">
+              </a>
+            
+
+            
+              </h1>
+            
+
+            </div>
+          </div>
+
+        </div>
+
+       
+      </div>
+
+      <div class="wrapper">
+
+        
+        <div class="grid--full">
+          <div class="grid-item medium-down--hide">
+          
+            <h1 class="header-logo" itemscope itemtype="http://schema.org/Organization">
+          
+
+          
+            <a href="index.html#himadri" itemprop="url">
+              <img src="img/logo.png" alt="Himadri" itemprop="logo"><!logo>
+            </a>
+          
+
+          
+            </h1>
+          
+          </div>
+        </div>
+
+        
+
+        <nav class="medium-down--hide" role="navigation">
+          
+
+
+
+<ul class="site-nav" id="accessibleNav">
+
+        <li >
+          <a href="about.html" class="site-nav__link">About</a>
+        </li>
+
+  
+  
+  
+  
+
+</ul>
+<div class="scents-link">
+<ul class="site-nav" id="accessibleNav">
+  
+   
+  
+    
+
+    
+    
+      
+       <li  class="services-all">
+          <a href="login.html" class="site-nav__link site-nav__linknodrop">Login</a>
+        </li>
+    
+  
+    
+
+    
+    
+      
+        <li  class="scents-all">
+          <a href="members.html" class="site-nav__link site-nav__linknodrop">People</a>
+        </li>
+      
+        
+        <li  class="services-all">
+          <a href="fourm.html" class="site-nav__link site-nav__linknodrop">Notices</a>
+        </li>
+  
+  
+    
+  <li >
+          <a href="form.html" class="site-nav__link">Today's Menu</a>
+        </li>
+
+  <li >
+          <a href="gallery.html" class="site-nav__link">Gallery</a>
+        </li>
+
+    <li>
+   <a href="https://goo.gl/forms/O3TFQA0TaJMBv0BV2" class="site-nav__link">Got photos?</a>
+  </li>
+  
+</ul>
+</div>
+        
+        
+          </nav>
+
+        
+
+        
+
+      </div>
+    </header>
+
+<!-- Header -->
+<div class="header" id="myHeader">
+  <h1>Image Grid</h1>
+  <p>Click on the buttons to change the grid view.</p>
+  
+</div>
+
+<!-- Photo Grid -->
+
+  
+<div class="row"> 
+  <div class="column">
+
+                
+      <a href="img/shirt.png" rel="lightbox" ><img src="img/shirt.png" style="width:100%" class="hover-shadow cursor"></a>
+      <a href="img/curl.png" rel="lightbox"><img src="img/curl.png" style="width:100%" class="hover-shadow cursor"></a>
+      
+    
+  </div>
+  <div class="column">
+      
+     <a href="img/shirt.png" rel="lightbox" ><img src="img/shirt.png" style="width:100%" class="hover-shadow cursor"></a>
+      <a href="img/curl.png" rel="lightbox"><img src="img/curl.png" style="width:100%" class="hover-shadow cursor"></a>
+      <a href="img/shirt.png" rel="lightbox" ><img src="img/shirt.png" style="width:100%" class="hover-shadow cursor"></a>
+      <a href="img/curl.png" rel="lightbox"><img src="img/curl.png" style="width:100%" class="hover-shadow cursor"></a>
+      <a href="img/shirt.png" rel="lightbox" ><img src="img/shirt.png" style="width:100%" class="hover-shadow cursor"></a>
+      <a href="img/curl.png" rel="lightbox"><img src="img/curl.png" style="width:100%" class="hover-shadow cursor"></a>
+  </div>  
+  <div class="column">
+
+      <a href="img/shirt.png" rel="lightbox" ><img src="img/shirt.png" style="width:100%" class="hover-shadow cursor"></a>
+      <a href="img/curl.png" rel="lightbox"><img src="img/curl.png" style="width:100%" class="hover-shadow cursor"></a><a href="img/shirt.png" rel="lightbox" ><img src="img/shirt.png" style="width:100%" class="hover-shadow cursor"></a>
+      <a href="img/curl.png" rel="lightbox"><img src="img/curl.png" style="width:100%" class="hover-shadow cursor"></a><a href="img/shirt.png" rel="lightbox" ><img src="img/shirt.png" style="width:100%" class="hover-shadow cursor"></a>
+      <a href="img/curl.png" rel="lightbox"><img src="img/curl.png" style="width:100%" class="hover-shadow cursor"></a> 
+
+  </div>
+  <div class="column">
+   <a href="img/shirt.png" rel="lightbox" ><img src="img/shirt.png" style="width:100%" class="hover-shadow cursor"></a>
+      <a href="img/curl.png" rel="lightbox"><img src="img/curl.png" style="width:100%" class="hover-shadow cursor"></a><a href="img/shirt.png" rel="lightbox" ><img src="img/shirt.png" style="width:100%" class="hover-shadow cursor"></a>
+      <a href="img/curl.png" rel="lightbox"><img src="img/curl.png" style="width:100%" class="hover-shadow cursor"></a><a href="img/shirt.png" rel="lightbox" ><img src="img/shirt.png" style="width:100%" class="hover-shadow cursor"></a>
+      <a href="img/curl.png" rel="lightbox"><img src="img/curl.png" style="width:100%" class="hover-shadow cursor"></a>
+      
+  
+  </div>
+</div>
+
+
+ <script type="text/javascript">
+      
+ 
+    $( ".scents__link" ).click(function() {
+      if ($( ".scents-all" ).css("display")=="none"){
+            $( ".scents-all" ).clearQueue();
+            $( ".scents-all" ).slideDown(400);
+          n=1;
+      } else {
+          $( ".scents-all" ).clearQueue();
+            $( ".scents-all" ).slideUp(400);
+      }
+    });
+    
+      
+    $( "[class*='link-']" ).click ( function () {
+    var elClasses = $( this ).attr ( 'class' ).split ( ' ' );
+
+    for ( var index in elClasses ) {
+        if ( elClasses[index].match ( /^link-\d+$/ ) ) {
+            var classNum = elClasses[index].split ( '-' )[1];
+          if ($("."+classNum).hasClass("active")){
+            $(".active").hide();
+            $(".active").removeClass("active");
+          } else {
+            $(".active").hide();
+            $(".active").removeClass("active");
+            $("."+classNum).show();
+            $("."+classNum).addClass("active");
+          }
+            break;
+        }
+    }
+} );
+      
+      $(".close-popup").click(function(){
+        $(".active").hide();
+        $(".active").removeClass("active");
+      });
+      
+      
+      
+      
+   $.fn.moveIt = function(){
+  var $els = $(this);
+  var $window = $(window);
+  var scrollPos = $window.scrollTop();
+  
+  $window.on('scroll', function(){
+    scrollPos = $window.scrollTop();
+    $els.each(moveEl);
+  });
+  
+  function moveEl(){
+    var $this = $(this);
+    var scrollSpeed = parseInt($this.data('scroll-speed'));
+    var elPos = scrollPos / scrollSpeed;
+    
+    $this.css('transform', 'translateY(-' + elPos + 'px)');
+  }
+}
+
+$(function(){
+  $('[data-scroll-speed]').moveIt();
+});
+      
+      
+      
+    
+    function resizeDiv() {
+  $(".fullHeight").css({"height": $(window).innerHeight()});
+    $(".fullScreen").css({"height": $(window).innerHeight()});
+    $(".fullScreen").css({"width": $(window).innerWidth()});
+    $(".about-happiness").css({"padding-top": ( ($(window).innerHeight() / 2) - 170 ) });
+  };
+  
+  $(document).ready(function(){
+    resizeDiv();
+  });
+
+  $(window).resize(function(){
+  resizeDiv();
+  });
+    
+      
+    $(function(){
+    var lastScrollTop = 0, delta = 5;
+    $(window).scroll(function(event){
+       var st = $(this).scrollTop();
+       
+       if(Math.abs(lastScrollTop - st) <= delta)
+          return;
+       
+       if (st > lastScrollTop){
+           // downscroll code
+           $(".nav-toggle").fadeOut();
+       } else {
+          // upscroll code
+          $(".nav-toggle").fadeIn();
+       }
+       lastScrollTop = st;
+    });
+  });
+      
+      
+     //Add Smooth Scrolling
+      if ($('.landing-bg-wrap').length) { 
+      $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+      }
+      
+    
+
+      
+    $(window).scroll(function(event) {
+  
+    $(".about-happiness").each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      $(".about-part_two").delay(2000).fadeOut("slow");
+      $(".about-part_three").delay(3000).fadeIn(2000); 
+      $(".about-bg1").delay(2000).fadeOut("slow"); 
+      $(".about-bg2").delay(3000).fadeIn(2000); 
+    } 
+  });
+  
+});
+      
+      
+  
+  
+
+ 
+    </script>
+
+
+
+</body>
+</html>
